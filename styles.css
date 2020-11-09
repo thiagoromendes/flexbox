@@ -1,0 +1,40 @@
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+    display: flex; /*habilita o flex para elementos filhos do elemento com este estilo*/
+    flex-direction: row; /*define a direção de alinhamento dos elementos*/
+    flex-wrap: wrap; /*Permite a quebra de linha quando os elementos não cabem na tela*/
+    align-items: center; /*alinhamento no eixo contrário ao flex-direction*/
+    justify-content: space-around; /*alinhamento no eixo da direção do flex-direction e outras funcionalidades de espaçamento entre elementos*/
+    align-content: center; /*realiza o alinhamento quando há quebra de linha dos elementos*/
+}
+
+.box {
+    width: 180px;
+    height: 60px;
+    background: #f00;
+    margin: 5px;
+    /*flex-grow => ocupa toda a largura em tela do elemento*/
+    /*flex-shrink => reduz a largura do elemento para caber na tela*/
+    /*flex: 1; /*esta propriedade é a soma das propriedades flex-grow e flex-shrink, nesse caso o elemento ocupa toda a tela e diminui de tamanho se a tela for reduzida*/
+
+}
+
+.red {
+    order: 1
+}
+
+.green {
+    order: 2;
+    background: #00FF00
+}
+
+.blue {
+    order: 3;
+    background: #0000FF;  
+}

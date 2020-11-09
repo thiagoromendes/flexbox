@@ -1,0 +1,95 @@
+* { 
+    margin: 0; /*Reset para elementos da tela, removendo margem externa (margin)*/
+    padding: 0; /*margem interna (padding)*/ 
+    box-sizing: border-box; /*mantém o tamanho dos elementos (não aumenta com o padding adicionado)*/
+}
+
+body {
+    background: #e6ecf0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+input, button {
+    outline: 0;
+}
+
+.content {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+header#main-header {   
+    height: 46px;
+    background: #FFF;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+}
+
+header#main-header div.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+ }
+
+header#main-header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+header#main-header nav ul li {
+     font-size: 13px;
+     color: #667580;
+     font-weight: bold;
+     margin-left: 30px;
+ }
+
+ header#main-header nav ul li:first-child {
+     margin: 0;
+ }
+
+ header#main-header img {
+    height: 20px;
+    width: 20px;
+    margin: 0 15px;
+ }
+
+ header#main-header div.side {
+     display: flex;
+ }
+
+ header#main-header div.side input {
+     background: #f5f8fa;
+     border: 1px solid #e6ecf0;
+     height: 34px;
+     padding: 0 12px;
+     border-radius: 16px;
+     color: #667581;
+     font-size: 12px;
+ }
+
+ header#main-header div.side img {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+ }
+
+ header#main-header div.side button {
+    height: 34px;
+    width: 90px;
+    background: #3bb9e3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    border: 0;
+    border-radius: 16px;
+ }
